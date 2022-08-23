@@ -213,7 +213,7 @@ Kafka
                         9. The availability is ensured, as if the leader falls, the next follower will
                                 becoem the leader automatically.
 
-                            assuming replica = 2
+                            assuming replica-factor = 2
 
                 Broker1         Broker2         Broker3     Broker4
                     TopicA          TopicA          TopicA      TopicA
@@ -239,7 +239,6 @@ Kafka
                 is a serial number maintained by the zookeeper for 
                 messages and consuemrs, to remeber, what is the 
                 last message consumed by a consumer in  a consumer group.
-
 
     Kafka API
     =================================================================================
